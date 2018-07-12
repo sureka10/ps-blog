@@ -1,0 +1,136 @@
+
+<body>
+    <div class="background-image"> 
+    <nav class="navbar">
+        <ul class="navigation-item">
+            <li id="about-list-item"> <a href="#about"> About </a> </li>
+            <li id="contact-list-item"> <a href="#contact"> Contact </a> </li>
+            <li id="blog-list-item"> <a href="#blog"> Blog </a> </li>
+        </ul>
+    </nav>
+    
+    
+    
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#about"> About </a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact"> Contact </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    
+    
+    
+    
+    
+    
+
+    <div class="jumbotron">
+    <div class=container>
+    <div class="row">  
+        <div class="col-md-3">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Goofy.svg/220px-Goofy.svg.png" alt="Goofy Image" width="100" height="120">
+        </div>
+        <div class="col-md-9">
+        <h1 class="title-1"> Hi, I am The Goofy Monster </h1>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div class=container>
+    <div class="row">  
+        <div class="col-md-4">
+            <div id="about"> <span class=about-title> About Me </span> </div>
+        </div>
+    </div>
+    </div>
+    
+    
+    <div class=container>
+        
+    <div class="row">
+        <div class="col-md-4">
+            <h3 class=skills_title> My Skills</h3>
+            <ul class="skills_list"> <li>Eat</li> <li>Sleep</li> <li>Play</li></ul>
+        </div>
+
+        <div class="col-md-4">
+            <h3 class=interests_title> My Interests</h3>
+            <ul class="interest_list"> <li>Eat</li> <li>Sleep</li> <li>Play</li></ul>
+        </div>
+    </div>
+    </div>    
+   
+   <hr style=margin:20px auto 70px; width: 60%;> </hr>
+   
+   <div id="contact"> </div>
+   
+    <div class="contact-title">
+            Contact Us
+    </div>
+        
+   <form id="contact_me">
+       <div class="contact-div"> <input required="required" type="text" value="Name"> </div>
+       <div class="contact-div"> <input required="required" type="email" value="Email"> </div>
+       <div class="contact-div"> <textarea></textarea></div>
+        <div class="contact-div"> <input required="required" type="submit" value="Submit"> </div>
+     
+   </form> 
+
+
+<input class="btn btn-primary" type="button" value="Click Me"/>
+
+<footer>
+  <div class="container"> <p> Copyright (c): Copyright The Goofy Monster, All Rights Forsaken</p>
+</footer>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    var ex = $('.title-1');
+    ex.text("New text here");
+  
+  //changeTitleColor();
+  
+  
+  $('.background-image').on('click', changeTitleColor);
+
+  function changeTitleColor(){
+      var newColor = getRandomColor();
+      var selectTitle = $('.title-1');
+      selectTitle.css({color: newColor, backgroundColor: "green", borderColor: "white", borderRadius: "20px"});
+  }
+    
+  function getRandomColor(){
+  return "#000000".replace(/0/g,function(){return (~~(Math.random()*16)).toString(16);});
+  }
+    
+</script>
+
+</body>
